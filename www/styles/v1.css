@@ -1,0 +1,960 @@
+@font-face{
+  font-family: 'AvenirTStd-Book.otf';
+  src: url('AvenirLTStd-Book.otf')
+}
+
+/* Possible fonts */
+
+/* Headers */
+
+.title{
+  text-align: center;
+  justify-content: center;
+  font-size: 50px;
+  margin-bottom: 25px;
+  margin-top: 25px;
+  font-family: 'AvenirTStd-Book.otf', sans-serif;
+}
+
+html,body{
+  font-family: 'AvenirTStd-Book.otf', sans-serif;
+  margin: 0px;
+  overflow-x: hidden;
+  min-height: 100%;
+}
+
+header{
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 10;
+  background: white;
+}
+
+/* Nav bar styling */
+
+nav{
+  display: flex;
+  flex-direction: column;
+  margin: 0px;
+}
+
+nav ul{
+  text-align: center;
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-evenly;
+  margin-bottom: 10px;
+}
+
+nav li {
+  list-style: none;
+  display: inline-block;
+  margin: 5px;
+  margin-bottom: 5px;
+  margin-left: 30px;
+  padding: 3px;
+}
+
+nav li:hover{
+  background-color: rgba(204,158,103,0.35);
+  border-radius: 4px;
+}
+
+nav a{
+  text-decoration: none;
+  color: black;
+}
+
+.center{
+  text-align: center;
+}
+
+/* Home page */
+
+.banner{
+  border-radius: 100px;
+  display:flex;
+  flex-grow: 1;
+  position: relative;
+  justify-content: center;
+  z-index: 1;
+}
+
+.mission-statement{
+  background-color: rgba(255,255,255,0.8);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  padding: 3%;
+  overflow:hidden;
+}
+
+.b_image{
+  background-image: url("../images/coffee5.jpg");
+  background-size: cover;
+}
+
+.mission-statement h1{
+  width: max-content;
+  padding: 5px;
+  text-align: center;
+}
+
+.interactive_homepage{
+  border: 2px solid black;
+  padding: 5px;
+  width: 90%;
+  margin-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.home-images{
+  justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  max-width: 100%;
+  margin-top: 40px;
+}
+
+.home-images img{
+  display: flex;
+  flex-shrink: 1;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  /* source: https://www.w3schools.com/css/css3_shadows.asp */
+  border-radius: 20px;
+  max-width: 400px;
+  max-height: 400px;
+  object-fit: cover;
+  padding: 15px;
+  margin: 10px;
+}
+
+.image_fit{
+  max-width: 100%;
+  max-height: 100%;
+  border-radius: 18px;
+  object-fit: contain;
+}
+
+/* contact.html */
+
+.team_picture{
+  display: flex;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  padding: 20px;
+  border-radius: 20px;
+  width: 90%;
+  height: 300px;
+  margin-left: auto;
+  margin-right: auto;
+  overflow: hidden;
+  background-image: url("../images/team_picture.jpg");
+  background-size: cover;
+}
+
+.member{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.block{
+  display: inline-block;
+  text-align: center;
+}
+
+.block2 {
+  display: inline-block;
+  margin-left: 5px;
+  margin-right: auto;
+}
+
+.m1 {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  /* source: https://www.w3schools.com/css/css3_shadows.asp */
+  border-radius: 20px;
+  width: 300px;
+  height: 300px;
+  padding: 13px;
+  margin: 10px;
+  margin-bottom: 30px;
+}
+
+.m2 {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  /* source: https://www.w3schools.com/css/css3_shadows.asp */
+  border-radius: 20px;
+  max-width: 300px;
+  max-height: 300px;
+  padding: 13px;
+  margin: 10px;
+  margin-bottom: 30px;
+}
+
+.m3 {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  /* source: https://www.w3schools.com/css/css3_shadows.asp */
+  border-radius: 20px;
+  max-width: 300px;
+  max-height: 300px;
+  padding: 13px;
+  margin: 10px;
+  margin-bottom: 30px;
+}
+
+.one {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  /* source: https://www.w3schools.com/css/css3_shadows.asp */
+  border-radius: 20px;
+  max-width: 300px;
+  max-height: 300px;
+  padding: 15px;
+  margin-right: auto;
+  margin-left: auto;
+  /* margin: 10px; */
+}
+span{
+  just: center;
+}
+.members_description{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.chelsea_description{
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  /* source: https://www.w3schools.com/css/css3_shadows.asp */
+  justify-content: center;
+  border-radius: 20px;
+  max-width: 225px;
+  max-height: 250px;
+  padding: 50px;
+  margin-top: 15px;
+  margin-bottom: 170px;
+}
+
+.joshua_description{
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  /* source: https://www.w3schools.com/css/css3_shadows.asp */
+  border-radius: 20px;
+  max-width: 225px;
+  max-height: 250px;
+  padding: 50px;
+  margin-top: 0px;
+  margin-bottom: 170px;
+}
+
+.alana_desciption{
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  /* source: https://www.w3schools.com/css/css3_shadows.asp */
+  border-radius: 20px;
+  max-width: 225px;
+  max-height: 250px;
+  padding: 50px;
+  margin-top: 15px;
+  margin-bottom: 170px;
+}
+
+.p4_description{
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  /* source: https://www.w3schools.com/css/css3_shadows.asp */
+  border-radius: 20px;
+  max-width: 225px;
+  max-height: 250px;
+  padding: 50px;
+  margin-top: 15px;
+  margin-bottom: 200px;
+}
+
+.contact_description{
+  margin-left: 6px;
+  margin-top: 15px;
+  text-align: center
+}
+
+.email{
+    margin-left: 6px;
+    margin-top: 15px;
+    text-align: center;
+    text-decoration: underline;
+}
+
+.image_resize_viri{
+  width: 300px;
+  height: 300px;
+  position: relative;
+  object-fit: cover;
+  object-position: 100% 0%;
+}
+
+.eboardpic{
+    margin: 10px;
+}
+
+.image_resize_noah{
+  width: 300px;
+  height: 300px;
+  position: relative;
+  object-fit: cover;
+}
+
+.image_resize_maggie{
+  width: 300px;
+  height: 300px;
+  position: relative;
+  object-fit: cover;
+}
+
+.image_resize_maddie{
+  width: 300px;
+  height: 300px;
+  position: relative;
+  object-fit: cover;
+}
+
+.image_resize_team{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  object-position: 0 5%;
+  padding: 2px;
+}
+
+/* media_gallery.html */
+
+.image-holder{
+  display: flex;
+  max-width: 100%;
+  margin-left: auto;
+  justify-content: center;
+}
+
+.slideshow{
+  max-width: 808px;
+  margin-left: auto;
+  margin-right: auto;
+  transition: 0.3s ease;
+}
+
+#slideshowImage{
+  max-width: 100%;
+}
+.mediadescription {
+  text-align: center;
+  font-size: 90%;
+}
+
+.circles{
+  margin-top: 10px;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid grey;
+}
+
+.dot{
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background-color: lightgrey;
+  /* float: right; */
+  display: inline-block;
+  justify-content: center;
+  margin: 10px;
+  transition: background-color 0.8s ease;
+}
+
+.dot:hover{
+  background-color: darkgrey;
+}
+
+.equipment{
+  border: 5px solid black;
+  width: fit-content;
+}
+
+.books{
+  width: fit-content;
+  border: 5px solid black;
+}
+/* meeting.html */
+
+/* team_picture class taken from contact.html */
+
+#team_picture_2{
+  display: flex;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  padding: 20px;
+  border-radius: 20px;
+  width: 90%;
+  height: 300px;
+  margin-left: auto;
+  margin-right: auto;
+  overflow: hidden;
+  background-image: url("../images/team_picture.jpg");
+  background-size: cover;
+}
+
+.meeting_description{
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  /* source: https://www.w3schools.com/css/css3_shadows.asp */
+  border-radius: 20px;
+  height: auto;
+  width: 90%;
+  padding: 15px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 30px;
+  text-align: left;
+}
+
+.meeting_description h1{
+    text-align: center;
+}
+
+.meeting_details{
+    display: flex;
+}
+
+.side{
+  /* div class for picture_1 and picture_2 */
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.side img {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  /* source: https://www.w3schools.com/css/css3_shadows.asp */
+  border-radius: 20px;
+  width: 400px;
+  height: 400px;
+  padding: 15px;
+  margin: 10px;
+  object-fit: cover;
+}
+
+.picture_1{
+  border-radius: 25px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+  overflow: hidden;
+  bottom: 0px;
+}
+
+.picture_2{
+  border-radius: 25px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+  overflow: hidden;
+  bottom: 0px;
+}
+
+.zoom_image{
+  /* zoom: 60%; */
+  bottom: 200px;
+}
+
+/* learn.html */
+
+.learn_inline{
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  justify-content: center;
+  margin: 4px;
+}
+
+.learn_block{
+  display: inline-block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.learn_button{
+  border-radius: 10px;
+  text-align:center;
+}
+
+.button_decoration{
+  background-color: rgba(204,158,103,0.35);
+  border-radius: 5px;
+  /* color: white; */
+  padding: 8px 5px 15px 5px;
+  display: inline-block;
+  /* text-decoration: none; */
+  font-size: 16px;
+  margin-top: 10px;
+  margin-right: auto;
+  margin-left: auto;
+  cursor: pointer;
+}
+
+/* Modified version on w3school.com
+https://www.w3schools.com/css/css3_buttons.asp
+*/
+
+a:visited{
+  color: black;
+}
+
+.learn_location{
+  border: 5px solid rgba(255,255,255,0.1);
+  margin-left: auto;
+  margin-right: auto;
+  height: 200px;
+  width: 96%;
+  margin-top: 20px;
+  border-radius: 25px;
+  background-color: rgba(255,255,255,0.8);
+}
+
+.learn_description{
+  margin-left: 10px;
+}
+
+.image_resize_chemex{
+  width: 250px;
+  height: auto;
+  position: relative;
+  zoom: 100%;
+  bottom: 20px;
+}
+
+.center{
+  text-align:center;
+}
+
+.centeru{
+  text-align: center;
+}
+
+.center a:hover{
+  color: red;
+}
+
+.center_2{
+  text-align:center;
+  margin-top: 70px;
+}
+
+.align{
+  text-align: center;
+}
+
+a:link{
+  text-decoration: none;
+  color: black;
+}
+
+.hide{
+  display: none;
+}
+
+p {
+  margin-left: 10px;
+  margin-top: 0px;
+}
+
+h2 {
+  margin-left: 10px;
+  margin-top: 8px;
+  margin-bottom: 8px;
+  text-decoration: underline;
+  text-decoration-color: rgba(204,158,103,0.4);
+}
+
+h3 {
+  margin-left: 10px;
+}
+
+
+footer{
+  bottom: 0;
+  background-color: rgba(204,158,103,0.35);
+  color: rosybrown;
+  text-align: center;
+  margin-top: 6%;
+  margin-bottom: 0px;
+  padding: 5px;
+  width: 100%;
+}
+
+@media screen and (min-width: 600px){
+  .top{
+    display: none;
+  }
+}
+
+@media screen and (max-width: 600px){
+
+.hidden2{
+  display: none;
+}
+
+nav li {
+  display: block;
+  text-align: left;
+  background-color: rgba(255,236,195,0.6);
+  padding: 5px;
+  padding-left: 35px;
+  margin: 6px;
+}
+
+nav ul img{
+  margin: 0px;
+}
+
+nav li:hover{
+  background-color: rgba(255, 236, 195, .6);
+}
+
+nav ul{
+  display: inline-block;
+  padding: 0px;
+  width: 100%;
+}
+
+.menu-icon{
+  margin-top: 5%;
+  margin-left: 3%;
+  margin-bottom: 0px;
+  text-decoration: none;
+  font-size: 160%;
+}
+
+.menu-icon:hover{
+  color: indianred;
+}
+
+.top a{
+  display: block;
+}
+
+/* Index Page */
+
+.home-images{
+  flex-direction: column;
+}
+/* meeting.html */
+
+.meeting_photo{
+  display: block;
+}
+
+.meeting_inline{
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  justify-content: center;
+}
+
+.right_side_text{
+  display: block;
+  border-radius: 25px;
+  border: 5px solid black;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 10px;
+  height: 300px;
+  width: 90%
+}
+
+.side img {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  /* source: https://www.w3schools.com/css/css3_shadows.asp */
+  border-radius: 20px;
+  max-width: 90%;
+  max-height: 350px;
+  padding: 15px;
+  margin: 10px;
+  /* margin-left: 120px; */
+  margin-left:auto;
+  margin-right:auto;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.picture_1{
+  border-radius: 25px;
+  width: 100%;
+  margin-right: auto;
+  margin-top: 20px;
+  overflow: hidden;
+  justify-content: center;
+}
+
+.picture_2{
+  display: flex;
+  flex-direction: column;
+  border-radius: 25px;
+  height: 350px;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+  overflow: hidden;
+  bottom: 0px;
+  justify-content: center;
+}
+
+/* contact.html */
+
+.block{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.block2 {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.one{
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  /* source: https://www.w3schools.com/css/css3_shadows.asp */
+  border-radius: 20px;
+  max-width: 225px;
+  max-height: 250px;
+  padding: 15px;
+  margin: 10px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.m1{
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  /* source: https://www.w3schools.com/css/css3_shadows.asp */
+  border-radius: 20px;
+  max-width: 225px;
+  max-height: 250px;
+  padding: 15px;
+  margin: 10px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.m2{
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  /* source: https://www.w3schools.com/css/css3_shadows.asp */
+  border-radius: 20px;
+  max-width: 225px;
+  max-height: 250px;
+  padding: 15px;
+  margin: 10px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.m3{
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  /* source: https://www.w3schools.com/css/css3_shadows.asp */
+  border-radius: 20px;
+  max-width: 225px;
+  max-height: 250px;
+  padding: 15px;
+  margin: 10px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.chelsea_description{
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  /* source: https://www.w3schools.com/css/css3_shadows.asp */
+  border-radius: 20px;
+  max-width: 225px;
+  max-height: 250px;
+  padding: 50px;
+  margin: 50px;
+  margin-bottom: 100px;
+}
+
+.joshua_description{
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  /* source: https://www.w3schools.com/css/css3_shadows.asp */
+  border-radius: 20px;
+  max-width: 225px;
+  max-height: 250px;
+  padding: 50px;
+  margin: 50px;
+  margin-bottom: 100px;
+
+}
+
+.alana_desciption{
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  /* source: https://www.w3schools.com/css/css3_shadows.asp */
+  border-radius: 20px;
+  max-width: 225px;
+  max-height: 250px;
+  padding: 50px;
+  margin: 50px;
+  margin-bottom: 100px;
+}
+
+.p4_description{
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  /* source: https://www.w3schools.com/css/css3_shadows.asp */
+  border-radius: 20px;
+  max-width: 225px;
+  max-height: 250px;
+  padding: 50px;
+  margin: 50px;
+  margin-bottom: 100px;
+}
+
+.image_resize_viri{
+  width: 225px;
+  height: 250px;
+  position: relative;
+  object-fit: cover;
+  object-position: 100% 0%;
+}
+
+.image_resize_noah{
+  width: 225px;
+  height: 250px;
+  position: relative;
+  object-fit: cover;
+}
+
+.image_resize_maggie{
+  width: 225px;
+  height: 250px;
+  position: relative;
+  object-fit: cover;
+}
+
+.image_resize_maddie{
+  width: 225px;
+  height: 250px;
+  position: relative;
+  object-fit: cover;
+}
+
+/* learn.html */
+
+.learn_inline{
+  display: block;
+}
+
+/* Media Gallery.html */
+.slideshow{
+  width: 100%;
+  height: 100%;
+}
+
+#slideshowImage{
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.mediadescription {
+  text-align: center;
+  font-size: 90%;
+}
+
+/* Meeting.html */
+
+#team_picture_2{
+  display: flex;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  padding: 20px;
+  border-radius: 20px;
+  width: 90%;
+  height: 300px;
+  margin-left: auto;
+  margin-right: auto;
+  overflow: hidden;
+  background-image: url("../images/team_picture.jpg");
+  background-size: cover;
+}
+
+.meeting_description{
+  /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); */
+  /* source: https://www.w3schools.com/css/css3_shadows.asp */
+  border-radius: 20px;
+  height: auto;
+  width: auto;
+  padding: 15px;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 30px;
+}
+
+/* .zoom_image_1{
+  position: relative;
+  right: 90px;
+} */
+
+.side{
+  /* div class for picture_1 and picture_2 */
+  display: flex;
+  flex-direction: column;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.block_meeting{
+  display: block;
+}
+
+/* index.html */
+.mission-statement {
+  background-color: rgba(255,255,255, 0.8);
+  border-radius: 15px;
+  position: absolute;
+  width: 90%;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%,-10%);
+  padding: 3%;
+  overflow:scroll;
+  height: 60%;
+}
+
+.mission-statement h1{
+  text-align: center;
+  margin-bottom: 0px;
+  margin-top: 0px;
+}
+
+.member{
+  display: block;
+  justify-content: space-around;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+header{
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: auto;
+  z-index: 10;
+  background: white;
+}
+
+footer{
+  width: fit-content;
+  margin-top: 10%;
+}
+
+}
